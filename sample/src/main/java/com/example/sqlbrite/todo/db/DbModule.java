@@ -25,7 +25,7 @@ import javax.inject.Singleton;
 import rx.schedulers.Schedulers;
 import timber.log.Timber;
 
-@Module()
+@Module
 public final class DbModule {
   @Provides @Singleton SQLiteOpenHelper provideOpenHelper(Application application) {
     return new DbOpenHelper(application);
